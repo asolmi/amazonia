@@ -1,0 +1,44 @@
+.video {
+  --padding-sesion: 0 0;
+}
+hero-sesion,
+.sesion-preguntas-container,
+invitado-sesion-container,
+moderador-sesion-container,
+bibliografia-sesion {
+  --padding-sesion: 30px 20px;
+}
+subtitle-sesion-section {
+  --padding-sesion: 0px 20px;
+}
+maps-cards {
+  --padding-sesion: 0px 0px 10px 0px;
+}
+.maps_container {
+  --padding-sesion: 20px 20px 20px 20px;
+}
+#hero-video .vjs-big-play-button,
+#mini-video .vjs-big-play-button {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  transform: translate(5%, -25%);
+}
+hero-sesion {
+  --font-size-p: 2rem;
+  --font-size-title: 3.8rem;
+  /* --title-align: center; */
+  /* --text-align-p: center; */
+}
+.preguntas-container,
+invitado-sesion-container,
+moderador-sesion-container,
+bibliografia-sesion {
+  --font-size-p: 2rem;
+  /* --text-align-p: center; */
+  /* --title-align: center; */
+}
+
+/* subtitle-sesion-section {
+  --title-align: center;
+} */

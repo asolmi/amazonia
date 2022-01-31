@@ -1,0 +1,24 @@
+header-amz-cartografica {
+  display: none;
+}
+header-amz-phone {
+  display: block;
+}
+#main-sesion-container {
+  padding-top: 80px;
+}
+hero-sesion {
+  --display-image: none;
+}
+.video {
+   --padding-sesion: 0 30px;
+}
+hero-sesion,
+.sesion-preguntas-container,
+invitado-sesion-container,
+moderador-sesion-container,
+subtitle-sesion-section,
+maps-cards,
+bibliografia-sesion {
+  --padding-sesion: 30px 30px;
+}

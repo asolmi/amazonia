@@ -1,0 +1,486 @@
+/* @font-face {
+  font-family: 'Cormorant Garamond-light';
+  src: url(../assets/fonts/CormorantGaramond-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-regular';
+  src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-medium';
+  src: url(../assets/fonts/CormorantGaramond-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-semi-bold';
+  src: url(../assets/fonts/CormorantGaramond-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-bold';
+  src: url(../assets/fonts/CormorantGaramond-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cormorant Garamond-regular';
+  font-weight: normal;
+  font-size: 10px;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+:root {
+  --principal-green: #6E7029;
+  --principal-background: #FFF4CC; 
+  --secondary-background: #D5C087;    
+
+  --secondary-animation-color: rgba(183, 166, 95, 0.6);
+  --background-head-color: #BAC7A3;
+
+  --padding-sesion: 50px 50px;
+
+  --bg-moderador-box: #e1cba4;
+
+  --background-subtitle-color: #735212;
+  --background-sub-box: #EADA9F;
+  --background-invited-box: #CEB582;
+
+  --bg-container-maps: #d2c07c;
+  --bg-box-map: #FFF4CC;
+
+  --video-detail: #3E83AF;
+  --video-background: #21272A;
+  
+  --text-color-paragraf: #282726;
+  --text-color-principal: #0e0e0e;
+
+  --general-page-width: 1200px;
+
+  --font-size-p: 2rem;
+  --font-size-title: 4rem;
+  --title-align: start;
+  --text-align-p: justify;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+a {
+  color: var(--text-color-principal);
+  text-decoration: none;
+}
+header-amz-phone {
+  display: none;
+}
+
+#presentacion,
+#metodologia,
+#concepto_grafico,
+#programa,
+#creditos {
+  padding: 109px 0 0;
+  margin: -109px 0 0;
+}
+
+header-amz-phone {
+  display: none;
+}
+header-amz-cartografica {
+  --margin-sesion-header: 0 50px 0 50px;
+  --width-sesion-header: 100%;
+  --width-nav-header: 100%;
+  --padding-nav-header: 50px;
+}
+
+/*  -------------------  SIDEBAR */
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+
+  padding-top: 110px;
+
+  background-image: url(../../assets/general/Vintage_Paper_19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  z-index: 1;
+}
+
+.sidebar ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 8px;
+  
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar ul a li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: end;
+  padding-right: 70px;
+}
+
+.sidebar ul a li:hover {
+  background-color: #A9A35A;
+  color: white;
+}
+
+/*  -------------------  INFO CONTAINER */
+
+main .main-joker-container {
+  display: flex;
+
+  margin: 0 auto 0 auto;  
+  padding-top: 110px;
+}
+
+main .main-joker-container .info_principal-container {
+  width: 100%;
+  margin-left: 300px;
+  background-color: white;
+
+  font-size: 1.4rem;
+}
+
+.info_principal-container .head-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 110px;
+  background-color: var(--background-head-color);
+}
+.info_principal-container .head-box h2 {
+  font-size: 4.2rem;
+  margin-right: 50px;
+}
+.backgr-presentacion {
+  background-image: url(/assets/info_proyecto/presentacion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.backgr-metodologia {
+  background-image: url(/assets/info_proyecto/metodologìa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.backgr-concepto {
+  background-image: url(/assets/info_proyecto/conceptos.png);
+  background-repeat: no-repeat;
+}
+
+.info_principal-container .info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: var(--padding-sesion);
+}
+
+.info-box .subtitle-presentacion {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  text-align: end;
+  padding-left: 15%;
+}
+
+.info-box .text-box {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  text-align: justify;
+  color: black;
+}
+
+.text-plus-image {
+  overflow: auto;
+}
+.text-plus-image ul {
+  list-style: inside;
+}
+.text-plus-image ul li {
+  margin-bottom: 8px;
+}
+
+.gap {
+  margin-bottom: 30px;
+}
+
+.text-plus-image .image-float-right {
+  margin: 0 50px;
+  width: 12%;
+  float: right;
+}
+.text-plus-image .image-float-left {
+  margin: 0 50px;
+  width: 12%;
+  float: left;
+}
+
+.first-letter {
+  font-size: 4rem;
+}
+
+.hoja-image {
+  width: 100%;
+}
+
+/* --------------------- PROGRAMA */
+
+
+.program-container {
+  column-count: 3;
+  column-span: none;
+  gap: 30px;
+}
+
+.program-box {
+  min-height: 200px;
+  /* max-height: 600px; */
+  width: 100%;
+  background-color: var(--principal-background);
+  padding: 15px 0 15px 0;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 35px;
+  overflow: auto;
+
+  text-align: start;
+}
+
+.date-program-box {
+  color: var(--background-subtitle-color);
+}
+.date-program-box:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.sesion-program-box {
+  color: var(--principal-background);
+  background-color: var(--background-subtitle-color);
+}
+.title-sesion-program {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+.info-invited-program {
+  color: var(--background-subtitle-color);
+}
+.univ-italic {
+  font-style: italic;
+}
+
+.date-program-box, 
+.sesion-program-box, 
+.title_plus_invited-program,
+.program-box span {
+  padding: 0 15px 0 15px;
+}
+/* ---------------------------- FOOTER */
+
+.footer-principal-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  width: 100%;
+  gap: 20px 20px;
+  overflow: auto;
+}
+.ul-footer {
+  list-style: none;
+}
+.footer-box-description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 0px;
+  width: 100%;
+}
+.footer-box-child {
+  width: 100%;
+}
+.get_and_imani_img {
+  display: flex;
+  gap: 30px;
+  align-self: flex-end;
+}
+.two-images-footer {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.two-images-footer img {
+  max-height: 165px;
+}
+.unal-logo {
+  align-self: flex-end
+}
+.unal-logo img {
+  max-height: 190px;
+}
+.biblio-nacional-logo {
+  width: 100%;
+}
+
+/* ---------------------------- MEDIA */
+
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+  main .main-joker-container .info_principal-container {
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  header-amz-cartografica {
+    display: none;
+  }
+  header-amz-phone {
+    display: block;
+  }
+  main .main-joker-container {
+    padding-top: 80px;
+  }
+  .info-box {
+    --padding-sesion: 30px 30px;
+  }
+  .info_principal-container .head-box h2 {
+    font-size: 3.8rem;
+    margin-right: 30px;
+  }
+  .biblio-nacional-logo {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .program-box {
+    margin-bottom: 20px;
+  }
+  .program-container {
+    column-count: 2;
+    gap: 15px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  #hero-video .vjs-big-play-button,
+  #mini-video .vjs-big-play-button {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    transform: translate(5%, -25%);
+  }
+  .info-box {
+    --padding-sesion: 20px 20px;
+  }
+  .info-box .subtitle-presentacion {
+     font-size: 2rem;
+      line-height: 2.8rem;
+  }
+  .first-letter {
+    font-size: 3rem;
+  }
+  .info-box .text-box {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .gap { 
+    margin-bottom: 20px;
+  }
+  .info_principal-container .head-box {
+    height: 50px;
+  }
+  .info_principal-container .info-box {
+    gap: 20px;
+  }
+  .info_principal-container .head-box h2 {
+    font-size: 2.8rem;
+    margin-right: 20px;
+  }
+  .backgr-concepto {
+    background-position: 33%;
+  }
+  .program-container {
+    column-count: unset;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scroll-snap-type: x proximity;
+    scrollbar-color: var(--background-subtitle-color) var(--principal-background);
+  }
+  .program-box {
+    min-width: 270px;
+    scroll-snap-align: center; 
+  }
+  .program-container::-webkit-scrollbar {
+    height: 8px;
+    background-color: #c4b26f;
+  }
+  .program-container::-webkit-scrollbar-thumb {
+    background-color: var(--principal-background);
+    border-radius: 10px;
+  }
+  .footer-box-description {
+    gap: 0px 0px;
+  }
+  .footer-principal-container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0px 20px;
+  }
+  .two-images-footer {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .two-images-footer img{
+    max-height: none;
+  }
+  .two-images-footer img:nth-child(1) {
+    width: 20%;
+  }
+  .two-images-footer img:nth-child(2) {
+    width: 70%;
+  }
+  .unal-logo img {
+    max-height: none;
+    width: 70%;
+  }
+  .biblio-nacional-logo {
+    max-height: none;
+    width: 100%;
+  }
+}
+
+
+

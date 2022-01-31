@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#FFF4CC">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="icon" href="../../assets/general/favicon_amz.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../CSS/video-js.css">
+  <title>Las Amazonas nacionales construyendo espacios estatales</title>
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link rel="stylesheet" href="../../CSS/desktop-small.css" media="(max-width: 1200px)">
+  <link rel="stylesheet" href="../../CSS/tablet.css" media="(max-width: 900px)">
+  <link rel="stylesheet" href="../../CSS/phone.css" media="(max-width: 600px)">
+
+</head>
+<body>
+  <header-amz-phone></header-amz-phone>
+  <header-amz-cartografica></header-amz-cartografica>
+
+  <div class="sidebar">
+    <ul>
+      <a href="#presentacion"><li>Presentación</li></a>
+      <a href="#conferencia"><li>Video - Conferencia</li></a>
+      <a href="#preguntas"><li>Preguntas</li></a>
+      <a href="#invitado"><li>Invitado</li></a>
+      <a href="#mapas"><li>Mapas</li></a>
+      <a href="#bibliografia"><li>Bibliografía</li></a>
+    </ul>
+  </div>
+
+  <main id="main-sesion-container">
+      
+      <div  id="presentacion"></div>
+      <hero-sesion
+        title_sesion="Las Amazonas nacionales construyendo espacios estatales"
+        presentation_text="El profesor David Ramírez reflexiona sobre la conocida línea Apaporis Tabatinga, fruto de las últimas demarcaciones coloniales entre los imperios ibéricos, explorando cómo esta hizo parte de las disputas que fueron definiendo las fronteras territoriales que configuraron los estados nacionales en la Amazonia."
+        url_img="../../assets/sesiones/08.jpg"
+      ></hero-sesion>
+      
+      <div  id="conferencia"></div>
+      <div class="video">
+        <video id="hero-video" 
+          poster="../../assets/miniaturas_videos/sesion/08.jpg"
+          class="hero-video
+                video-js  
+                vjs-big-play-centered
+                vjs-control-bar
+                vjs-current-time vjs-time-control"
+          data-setup="{}"
+        >
+        <source 
+          src="../../assets/video/8-sesion/08conferencia.mp4" 
+          type="video/mp4"
+        ></video>
+      </div>
+      
+      <div  id="preguntas"></div>
+      <div class="sesion-preguntas-container">              
+        <div class="container-video-preguntas">
+          <video id="mini-video" 
+            poster="../../assets/miniaturas_videos/preguntas/08.jpg"
+            class="mini-video
+                  video-js  
+                  vjs-big-play-centered
+                  vjs-control-bar
+                  vjs-current-time vjs-time-control"
+            data-setup="{}"
+          >
+            <source 
+              src="../../assets/video/8-sesion/08preguntas.mp4" 
+              type="video/mp4"
+            >
+          </video>
+        </div>
+
+        <div class="preguntas-container">
+          <h2>Preguntas</h2>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum, fugit consectetur dicta odio ipsum, assumenda, nisi et in nesciunt libero doloremque debitis architecto amet repellendus ipsam quod illum vero!
+          Laboriosam reprehenderit iure, aliquid quis molestias natus. Reprehenderit ratione fugiat neque ipsam. Velit sunt aliquid, enim mollitia saepe asperiores laboriosam qui consectetur maxime, soluta ab assumenda beatae quo eaque deserunt.</p>
+        </div>
+      </div>
+      
+      <div  id="invitado"></div>
+      <invitado-sesion-container
+        nombre_invitado="David Ramirez Palacios"
+        nombre_universidad=" Universidad Nacional de Colombia, Universidade de São Paulo"
+        description="David Ramírez Palacios, es graduado en Historia por la Universidad Nacional de Colombia, magíster y doctor en Geografía Humana por la Universidade de São Paulo. En la actualidad es investigador posdoctoral en Historia de la Universidade Federal do Pará, editor científico de la revista Terra Brasilis y cofundador de Razón Cartográfica. Sus áreas de investigación son historia de la geografía, historia de la cartografía, historia territorial, historia ambiental, geografía política, ecología política y filosofía de las ciencias. Ha impartido conferencias en diferentes eventos de América Latina, Estados Unidos y Europa."
+        url_img="../../assets/conferencistas/08_David_Ramirez_Palacios.png"
+      ></invitado-sesion-container>
+      
+      <moderador-sesion-container
+        nombre_moderador="Jorge Aponte Motta"
+        nombre_universidad=" Universidad Nacional de Colombia"
+        description="Jorge Aponte Motta, es graduado en Ciencia Política y magíster en Estudios Amazónicos por la Universidad Nacional de Colombia, magíster y doctor en Geografía por la Universidad Autónoma de Madrid. En la actualidad es docente e investigador de la Universidad Nacional de Colombia y gestor de Razón Cartográfica. Sus áreas de interés son los estudios fronterizos, los estudios urbanos, la historia de la cartografía, la ecología política y las relaciones ambientales, geográficas e histórica en la Amazonía."
+      ></moderador-sesion-container>
+      
+      <div  id="mapas"></div>
+      <subtitle-sesion-section subtitle="Mapas"></subtitle-sesion-section>
+      
+      <section class="maps_container">
+        <maps-cards sesion="sesion8"></maps-cards>
+      </section>
+      
+      <subtitle-sesion-section subtitle="Bibliografia"></subtitle-sesion-section>
+      
+      <div  id="bibliografia"></div>
+      <bibliografia-sesion>
+        <p slot="text-box">
+          Utilizamos material cartográfico de la Biblioteca Nacional de Colombia, la Biblioteca Nacional de Brasil, la Biblioteca Nacional de España y la Biblioteca del Congreso de los Estados Unidos. 
+        </p>
+        <p slot="text-box">
+          Utilizamos material cartográfico de la Biblioteca Nacional de Colombia, la Biblioteca Nacional de Brasil, la Biblioteca Nacional de España y la Biblioteca del Congreso de los Estados Unidos. 
+        </p>
+        <p slot="text-box">
+          Utilizamos material cartográfico de la Biblioteca Nacional de Colombia, la Biblioteca Nacional de Brasil, la Biblioteca Nacional de España y la Biblioteca del Congreso de los Estados Unidos. 
+        </p>
+      </bibliografia-sesion>
+
+  </main>
+
+    
+
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/video.min.js"></script>
+ 
+  <script>
+    const reproductor = videojs('hero-video', {
+      aspectRatio: "16:9",
+      preload: 'metadata',
+      fluid: true,
+      controls: true,
+      playbackRates: [0.5, 1, 1.25, 1.5, 1.75, 2],
+      preferFullWindow: true,
+      userActions: {
+        hotkeys: true
+      },
+      
+    })
+    const miniReproductor = videojs('mini-video', {
+      aspectRatio: "16:9",
+      preload: 'metadata',
+      fluid: true,
+      controls: true,
+      playbackRates: [0.5, 1, 1.25, 1.5, 1.75, 2],
+      preferFullWindow: true,
+      userActions: {
+        hotkeys: true
+      },
+    })
+  </script>
+  
+  <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+  <script type="module" src="../../app.js"></script>
+
+</body>
+</html>

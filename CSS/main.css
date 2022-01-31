@@ -1,0 +1,199 @@
+/* @font-face {
+  font-family: 'Cormorant Garamond-light';
+  src: url(../assets/fonts/CormorantGaramond-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-regular';
+  src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-medium';
+  src: url(../assets/fonts/CormorantGaramond-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-semi-bold';
+  src: url(../assets/fonts/CormorantGaramond-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant Garamond-bold';
+  src: url(../assets/fonts/CormorantGaramond-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cormorant Garamond-regular';
+  font-weight: normal;
+  font-size: 10px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --principal-green: #6E7029;
+  --principal-background: #FFF4CC; 
+  --secondary-background: #D5C087;    
+
+  --secondary-animation-color: rgba(183, 166, 95, 0.6);
+  --background-head-color: #BAC7A3;
+
+  --padding-sesion: 50px 50px;
+
+  --bg-moderador-box: #e1cba4;
+
+  --background-subtitle-color: #735212;
+  --background-sub-box: #EADA9F;
+  --background-invited-box: #CEB582;
+
+  --bg-container-maps: #d2c07c;
+  --bg-box-map: #FFF4CC;
+
+  --video-detail: #3E83AF;
+  --video-background: #21272A;
+  
+  --text-color-paragraf: #282726;
+  --text-color-principal: #0e0e0e;
+
+  --general-page-width: 1200px;
+
+  --font-size-p: 2rem;
+  --font-size-title: 4rem;
+  --title-align: start;
+  --text-align-p: justify;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+a {
+  color: var(--text-color-principal);
+  text-decoration: none;
+}
+header-amz-phone {
+  display: none;
+}
+header-amz-cartografica {
+  --margin-sesion-header: 0 50px 0 50px;
+  --width-sesion-header: 100%;
+  --width-nav-header: 100%;
+  --padding-nav-header: 50px;
+}
+
+#main-sesion-container {
+  margin-left: 300px;
+  padding-top: 110px;
+}
+.sidebar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  padding-top: 110px;
+
+  background-image: url(/assets/general/Vintage_Paper_19.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-position: initial;
+  z-index: 3;
+}
+.sidebar ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 8px;
+  
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+.sidebar ul a li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: end;
+  padding-right: 70px;
+}
+
+.sidebar ul a li:hover {
+  background-color: #A9A35A;
+  color: white;
+}
+#presentacion,
+#preguntas,
+#conferencia,
+#invitado,
+#mapas,
+#bibliografia {
+  padding: 110px 0 0;
+  margin: -110px 0 0;
+}
+.video {
+  padding: var(--padding-sesion);
+  background-color: var(--principal-background);
+  width: 100%;
+}
+#hero-video:hover .vjs-big-play-button,
+#mini-video:hover .vjs-big-play-button {
+  background-color: var(--principal-green);
+}
+#hero-video .vjs-big-play-button,
+#mini-video .vjs-big-play-button {
+  background-color: rgba(56, 56, 56, 0.9);
+  width: 150px;
+  height:100px;
+  line-height: 100px;
+  /* border-radius: 100%; */
+  border: none;
+  transform: translate(-21%, -25%);
+}
+.video-js .vjs-current-time,
+.vjs-no-flex .vjs-current-time {
+  display: block !important;
+} 
+.sesion-preguntas-container {
+  padding: var(--padding-sesion);
+  background-color: var(--principal-background);
+  display: flex;
+  gap: 35px;
+  width: 100%;
+}
+.container-video-preguntas {
+  width: 100%;
+}
+.preguntas-container {
+  width: 100%;
+  font-size: var(--font-size-p);
+  line-height: 2.6rem;
+  font-weight: 500;
+  text-align: justify;
+  color: black;
+}
+
+.maps_container {
+  background-color: var(--bg-container-maps);
+  padding: var(--padding-sesion);
+}
+
+@media (max-width: 760px) {
+  .sesion-preguntas-container {
+    flex-direction: column-reverse;
+  }
+}

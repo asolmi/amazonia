@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#FFF4CC">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Amazonia Cartográfica</title>
+  <link rel="icon" href="./assets/general/favicon_amz.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/home.css">
+  <link rel="stylesheet" href="./CSS/video-js.css">
+</head>
+<body>
+  <header-amz-phone></header-amz-phone>
+  <header-amz-cartografica></header-amz-cartografica>
+
+  <section class="hero-container">
+    <div class="hero-joker-container">
+      <p>
+        <b>Abajo va el video de presentacion (?)</b> y <b>aquí el texto de presentación (?)</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam accusamus, saepe provident blanditiis dignissimos atque minima necessitatibus voluptates maiores doloribus sequi ex! Doloribus a tempore facere corporis sequi possimus? Perspiciatis.
+        Tenetur odio explicabo quisquam architecto inventore expedita distinctio. 
+      </p>
+
+      <div class="video">
+        <video id="hero-video" 
+          poster="./assets/miniaturas_videos/sesion/08.jpg"
+          class="hero-video
+                video-js  
+                vjs-big-play-centered
+                vjs-control-bar
+                vjs-current-time vjs-time-control"
+          data-setup="{}"
+        >
+          <source 
+            src="./assets/video/8-sesion/08conferencia.mp4" 
+            type="video/mp4"
+          >
+        
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="sesions-container">
+      <h1>CURSO DE EXTENSIÓN</h1>
+      <div class="sesion-cards-container">
+        <card-home
+          url_sesion="./pages/8-las-amazonas-nacionales-construyendo-espacios-estatales/"
+          url_image_sesion="./assets/sesiones/14.jpg"
+          title="La amazonia urbanizada."
+          name_monitor="Germán Ignacio Ochoa Zuluaga"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/14_Beatriz_Piccolotto.png"
+            name_invitado="Beatriz Piccolotto Siqueira"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/14B_Pedro_Hungria_Cabral.png"
+            name_invitado="Pedro Hungria Cabral"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/14_Claudia_Alexandra_Duque.png"
+            name_invitado="Claudia Alexandra Duque"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+        url_sesion=""
+        url_image_sesion="./assets/sesiones/05.jpg"
+        title="Mitos, materiales y mundos de la cartografía amazónica."
+        name_monitor="Jorge Aponte Motta"
+      >
+        <detail-box-invited
+          slot="invited_container"
+          url_image_invitado="./assets/conferencistas/05_Neil_Safier.png"
+          name_invitado="Neil Safier"
+        >
+        </detail-box-invited>
+         </card-home>
+
+        <card-home
+          url_sesion="/pages/sesion/3-malena-mazzitelli-y-rildo-borges-duarte/"
+          url_image_sesion="./assets/sesiones/03.jpg"
+          title="Imaginar, medir y representar el territorio ignoto."
+          name_monitor="Jorge Aponte Motta"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/03_Malena_Mazzitelli_Mastricchio.png"
+            name_invitado="Malena Mazzitelli Mastricchio"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/03_Rildo_Borges Duarte.png"
+            name_invitado="Rildo Borges Duarte"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+        url_sesion="/pages/sesion/2-jorge-pimentel-cintra/"
+        url_image_sesion="./assets/sesiones/02.jpg"
+        title="La cartografía histórica, alcances y limitaciones para una historia territorial amazónica."
+        name_monitor="Jorge Aponte Motta"
+      >
+        <detail-box-invited
+          slot="invited_container"
+          url_image_invitado="./assets/conferencistas/02_Pimentel.png"
+          name_invitado="Jorge Pimentel Cintra"
+        >
+        </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/04.jpg"
+          title="De los monstruos marinos a las monstruosidades ribereñas: la tensión de dos mundos en la Amazonia."
+          name_monitor="Camilo Useche López"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/04_Chet_Van_Duzer.png"
+            name_invitado="Chet Van Duzer"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/04_Sebastian_Gomez_Gonzalez.png"
+            name_invitado="Sebastián Gómez González"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/06.jpg"
+          title="La disputa imperial y el control del espacio amazónico."
+          name_monitor="Daniel Esteban Unigarro"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/06_A_Iris_Kantor.png"
+            name_invitado="Iris Kantor"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/06_Roberto_Chauca_Tapia.png"
+            name_invitado="Roberto Chauca Tapia"
+          >
+          </detail-box-invited>
+        </card-home>
+        
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/07.jpg"
+          title="El ojo científico sobre la Amazonia. El problema de explorar y demarcar la Amazonía en tiempos de la Comisión Corográfica."
+          name_monitor="Anthony Picón Rodríguez"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/07_Efrain_Sanchez.png"
+            name_invitado="Efraín Sánchez Cabra"
+          >
+          </detail-box-invited>
+        </card-home>
+        
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/08.jpg"
+          title="Las Amazonas nacionales construyendo espacios estatales."
+          name_monitor="Jorge Aponte Motta"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/08_David_Ramirez_Palacios.png"
+            name_invitado="David Ramírez Palacios"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/09.jpg"
+          title="Encuentros cartográficos y demarcación de fronteras en la Amazonía."
+          name_monitor="Jorge Aponte Motta"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/09_Andre_Reyes_Novaes.png"
+            name_invitado="André Reyes Novaes"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/11.jpg"
+          title="Representación indígena del espacio amazónico: formas autóctonas de representar el espacio."
+          name_monitor="Juan David Delgado Rozo"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/11_Santiago_Munoz_Arbelaez.png"
+            name_invitado="Santiago Muñoz Arbeláez"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/11_Juan_Alvaro_Echeverri.png"
+            name_invitado="Juan Alvaro Echeverri"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/12.jpg"
+          title="Cercas, presas y otras  infraestructuras: la Amazonia en los proyectos del desarrollo."
+          name_monitor="Anthony Picón Rodríguez"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/12_Simon_Uribe.png"
+            name_invitado="Simón Uribe"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/12_Sebastian_Diaz_Angel.png"
+            name_invitado="Sebastián Díaz Ángel"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/13.jpg"
+          title="Luchando por la tierra. Resistencias y militancias cartográficas."
+          name_monitor="Nicolás Victorino"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/13_Alfredo_Wagner.png"
+            name_invitado="Alfredo Wagner"
+          >
+          </detail-box-invited>
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/13_Bladimir_Rodriguez_Munoz.png"
+            name_invitado="Bladimir Rodríguez Muñoz"
+          >
+          </detail-box-invited>
+        </card-home>
+
+        <card-home
+          url_sesion=""
+          url_image_sesion="./assets/sesiones/15.jpg"
+          title="Literatura, Amazonia y cartografía."
+          name_monitor="Jorge Aponte Motta"
+        >
+          <detail-box-invited
+            slot="invited_container"
+            url_image_invitado="./assets/conferencistas/15_Margarita_Serje.png"
+            name_invitado="Margarita Serje"
+          >
+          </detail-box-invited>
+        </card-home>
+
+      </div>
+    </section>
+  </main>
+
+  <footer> 
+    <div class="footer-joker-container">
+      <section class="footer-text-box">
+        <div class="footer-text-organize">
+          <h3>Organiza:</h3>
+          <p>Grupo de Estudios Transfronterizos GET</p>
+          <p>Instituto Amazónico de Investigaciones "Imani"</p>
+          <p>Área de Extensión</p>
+          <p>Sede Amazonia</p>
+        </div>
+        <div class="footer-text-support">
+          <h3>Apoya:</h3>
+          <p>Laboratorio Digital de Arquitectura y Urbanismo</p>
+          <p>Escuela de Arquitectura y Urbanismo</p>
+          <p>Facultad de Artes</p>
+          <p>Sede Bogotá</p>
+        </div>
+      </section>
+  
+      <section class="footer-image-box">
+        <img src="./assets/LOGOS-footer/lOGOS___universidad_nacional.jpg" alt="">
+        <img src="./assets/LOGOS-footer/lOGOS___imani.jpg" alt="">
+        <img src="./assets/LOGOS-footer/lOGOS___GET.jpg" alt="">
+        <img src="./assets/LOGOS-footer/lOGOS___Razon_Cartografica.jpg" alt="">
+        <img src="./assets/LOGOS-footer/lOGOS___BRP_centro_cultural.jpg" alt="">
+        <img src="./assets/LOGOS-footer/lOGOS___biblioteca_nacional.jpg" alt="">
+      </section>
+    </div>
+
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/video.min.js"></script>
+  <!-- <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script> -->
+  
+  <script>
+    const reprodutor = videojs('hero-video', {
+      aspectRatio: "16:9",
+      preload: 'metadata',
+      fluid: true,
+      controls: true,
+      playbackRates: [0.5, 1, 1.25, 1.5, 1.75, 2],
+      preferFullWindow: true,
+      userActions: {
+        hotkeys: true
+      },
+
+    })
+  </script>
+  
+  <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+  <script type="module" src="./app.js"></script>
+
+</body>
+</html>

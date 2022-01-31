@@ -1,0 +1,12 @@
+.sidebar {
+  display: none;
+}
+#main-sesion-container {
+  margin-left: 0;
+}
+.video {
+  --padding-sesion: 0 50px;
+}
+.sesion-preguntas-container {
+  align-items: center;
+}
