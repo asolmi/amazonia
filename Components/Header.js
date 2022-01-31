@@ -15,8 +15,8 @@ class Header extends HTMLElement {
       <header>
         <div class="header-container">
           <section class="logo-container">
-            <a href="../../"> 
-              <img class="logo" src="../../assets/general/Amazonia_cartografica.png" alt="amazonia cartografica">
+            <a href="./"> 
+              <img class="logo" src="./assets/general/Amazonia_cartografica.png" alt="amazonia cartografica">
             </a>
           </section>
           
@@ -66,7 +66,7 @@ class Header extends HTMLElement {
           width: 100%;
           z-index: 4;
 
-          background-image: url(../../assets/general/Vintage_Paper_19.jpg);
+          background-image: url(./assets/general/Vintage_Paper_19.jpg);
           background-position: top;
           background-repeat: no-repeat;
           background-size: cover;
